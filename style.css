@@ -60,10 +60,10 @@ a:hover{
 }
 
 
-  /*HEADER*/
+  /*NAV BAR*/
 
 .top-nav{
-    padding: 10px 0;
+    padding: 9px 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -86,32 +86,33 @@ a:hover{
 }
 
 
-/*HEADER 240px*/
+/*320px NAV BAR */
 
 @media only screen and (max-width: 320px) {
 
-.top-nav{
-    padding: 0 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.3)
-}
+    .top-nav{
+        padding: 0 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, .3)
+    }
 
-.nav{
-    width: 100%;
-    text-align: right;
-}
+    .nav{
+        width: 100%;
+        text-align: right;
+    }
 
-.nav > a{
-    display: block;
-    padding: 1px 1.5px 1px 1px ;
-    text-transform: uppercase;
-    border-radius: 3px;
-    font-weight: bold;
-    color: white;
-}
+    .nav > a{
+        display: block;
+        padding: 1px 1px 1px 1px ;
+        text-transform: uppercase;
+        border-radius: 3px;
+        font-weight: bold;
+        font-size:16.5px;
+        color: white;
+    }
 
 }
 
@@ -135,32 +136,71 @@ position: relative;
 }
 
 .name{
-    visibility: hidden;
-    position: absolute;
+    /*visibility: invisible;*/
+    font-size: 100px;
+    /*position: absolute;*/
 }
 
-/*SELFIE 240px*/
+
+/*471px ABOUT */
+@media only screen and (max-width: 471px) {
+    .name{
+        font-size: 70px;}
+}
+
+/*320px ABOUT */
 @media only screen and (max-width: 320px) {
 
-   .selfie {
-border-radius: 50%;
-width: 48%;
-height: auto;
-padding-top: 48%;
-margin: 0 auto 4%;
-background: no-repeat;
-background-image: url(self.jpg);
-background-position: 52% 20%;
-background-size: cover;
-position: relative;
-z-index: 1;
-}}
-
-.name {
-    visibility: visible;
+       .selfie {
+    border-radius: 50%;
+    width: 45%;
+    height: auto;
+    padding-top: 45%;
+    margin: 0 auto 4%;
+    background: no-repeat;
+    background-image: url(self.jpg);
+    background-position: 52% 20%;
+    background-size: cover;
     position: relative;
+    z-index: 2;
+    }
+
+    .name {
+        visibility: visible;
+        position: relative;
+        font-size: 60px;
+    }
 }
 
+
+
+/*CONTACT*/
+
+.contact a{
+    color: black;
+    padding: 2px 2px;
 }
 
-/*WORK*/
+.body {
+
+    text-align: justify;
+    font-size: 50px;
+    display: inline;
+    font-family: helvetica;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+/*471px CONTACT*/
+@media only screen and (max-width: 471px) {
+    .body{
+        font-size: 30px;
+        text-align: center;
+        display: block;
+    }
+}
+
+
