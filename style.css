@@ -112,7 +112,7 @@ a:hover{
 }
 
 
-/*321px NAV BAR */
+/*321px AND UNDER NAV BAR */
 
 @media only screen and (max-width: 321px) {
 
@@ -194,8 +194,6 @@ a:hover{
 
 /*HEADER*/
 
-/*.header{ padding: 0 0 50px 0;}*/
-
 
 .name{
     font-size: 100px;
@@ -225,23 +223,31 @@ a:hover{
     }
 }
 
+/*321px AND OVER HEADER PADDING*/
+
+  @media only screen and (min-width: 321px) {
+    .header{ padding: 0px 0 35px 0;
+
+        transition:all .2s linear;
+        -o-transition:all .2s linear;
+        -moz-transition:all .2s linear;
+        -webkit-transition:all .2s linear;}
+}
+
 /*ABOUT*/
 
 .body a{
     color: black;
     padding: 1.2px 1.2px;
     font-weight: bold;
-
     background-color: yellow;
 }
 .body a:hover{
-
     background-color: white;
-
-        transition:all .4s ease-out;
-        -o-transition:all .4s ease-out;
-        -moz-transition:all .4s ease-out;
-        -webkit-transition:all .4s ease-out;
+    transition:all .4s ease-out;
+    -o-transition:all .4s ease-out;
+    -moz-transition:all .4s ease-out;
+    -webkit-transition:all .4s ease-out;
 }
 
 .body {
@@ -255,6 +261,19 @@ a:hover{
     text-align: center;
 }
 
+.about, .contact{
+    background: yellow;
+}
+
+.about a,
+.contact a{
+    background: white;
+}
+
+.about a:hover,
+.contact a:hover{
+    background:yellow;
+}
 
 
 /*471px AND UNDER ABOUT*/
@@ -271,19 +290,12 @@ a:hover{
 }
 
 
-.about, .contact{
-    background: yellow;
-}
+/*321px AND UNDER ABOUT*/
+@media only screen and (max-width: 321px) {
+.about {
+    padding-top: 10px;
+}}
 
-.about a,
-.contact a{
-    background: white;
-}
-
-.about a:hover,
-.contact a:hover{
-    background:yellow;
-}
 
 /*CONTACT*/
 
