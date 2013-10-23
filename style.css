@@ -1,0 +1,55 @@
+/*GLOBAL*/
+
+* {
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: Helvetica;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.invisible{
+    visibility: hidden;
+}
+/*HERO*/
+
+.hero {
+    background-color: yellow;
+    width: 100%;
+    height: 350px;
+}
+
+.portrait {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: no-repeat;
+    background-image: url(self.jpg);
+    background-size: cover;
+}
+
+.name {
+    margin: 20px auto 0 ;
+    max-width: 250px;
+    height: auto;
+}
+
+.about{
+    height: 450px;
+    padding-top: 5%;
+}
+
+.work{
+    background-color: #FFB014;
+    height: 400px;
+    margin-top: 5%;
+
+}
