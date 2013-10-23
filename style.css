@@ -98,9 +98,9 @@ a:hover{
 }
 
 
-/*320px NAV BAR */
+/*321px NAV BAR */
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 321px) {
 
     .top-nav{
         padding: 0 0;
@@ -109,6 +109,10 @@ a:hover{
         width: 100%;
         z-index: 1;
         background-color: rgba(0, 0, 0, .3)
+        transition:all .1s linear;
+        -o-transition:all .1s linear;
+        -moz-transition:all .1s linear;
+        -webkit-transition:all .1s linear;
     }
 
     .nav{
@@ -160,11 +164,16 @@ a:hover{
 /*471px AND UNDER HERO */
 @media only screen and (max-width: 471px) {
     .name{
-        font-size: 70px;}
+        font-size: 70px;
+        transition:all .3s linear;
+        -o-transition:all .3s linear;
+        -moz-transition:all .3s linear;
+        -webkit-transition:all .3s linear;
+    }
 }
 
-/*320px  AND UNDER HERO */
-@media only screen and (max-width: 320px) {
+/*321px  AND UNDER HERO */
+@media only screen and (max-width: 321px) {
 
     .selfie {
         display: inline-block;
@@ -179,6 +188,10 @@ a:hover{
         background-size: cover;
         position: relative;
         z-index: 2;
+        transition:all .1s ease-out;
+        -o-transition:all .1s ease-out;
+        -moz-transition:all .1s ease-out;
+        -webkit-transition:all .1s ease-out;
     }
 
     .name {
@@ -224,6 +237,10 @@ a:hover{
         font-size: 30px;
         text-align: center;
         display: block;
+        transition:all .3s linear;
+        -o-transition:all .3s linear;
+        -moz-transition:all .3s linear;
+        -webkit-transition:all .3s linear;
     }
 }
 
