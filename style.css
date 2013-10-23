@@ -63,6 +63,10 @@ a:hover{
     font-style: italic;
 }
 
+.section{
+    padding: 57px 0 100px 0;
+}
+
 
   /*NAV BAR*/
 
@@ -129,23 +133,26 @@ a:hover{
 
 .hero{
     width: 100%;
+    text-align: center;
 }
 
-   .selfie {
-width: 100%;
-height: auto;
-padding-top: 48%;
-margin: 0 auto 3%;
-background: no-repeat;
-background-image: url(self.jpg);
-background-position: 60% 0;
-background-size: cover;
-position: relative;
+.selfie {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding-top: 48%;
+    margin: 0 auto 3%;
+    background: no-repeat;
+    background-image: url(self.jpg);
+    background-position: 60% 0;
+    background-size: cover;
+    position: relative;
+    border-radius: 0px;
 }
 
 .name{
-    /*visibility: invisible;*/
     font-size: 100px;
+    /*visibility: invisible;*/
     /*position: absolute;*/
 }
 
@@ -159,18 +166,19 @@ position: relative;
 /*320px  AND UNDER HERO */
 @media only screen and (max-width: 320px) {
 
-       .selfie {
-    border-radius: 50%;
-    width: 45%;
-    height: auto;
-    padding-top: 45%;
-    margin: 0 auto 4%;
-    background: no-repeat;
-    background-image: url(self.jpg);
-    background-position: 52% 20%;
-    background-size: cover;
-    position: relative;
-    z-index: 2;
+    .selfie {
+        display: inline-block;
+        border-radius: 50%;
+        width: 45%;
+        height: auto;
+        padding-top: 45%;
+        margin: 0 auto 4%;
+        background: no-repeat;
+        background-image: url(self.jpg);
+        background-position: 52% 20%;
+        background-size: cover;
+        position: relative;
+        z-index: 2;
     }
 
     .name {
@@ -184,9 +192,17 @@ position: relative;
 
 /*ABOUT*/
 
-.about a{
+.body a{
     color: black;
-    padding: 2px 2px;
+    padding: 1.2px 1.2px;
+    font-weight: bold;
+
+    background-color: yellow;
+}
+.body a:hover{
+
+    padding: 1.5px 1.5px;
+    background-color: white;
 }
 
 .body {
@@ -212,9 +228,8 @@ position: relative;
 }
 
 
-.section{
-    padding: 57px 0 100px 0;
-}
+
+/*CONTACT*/
 
 .contact{
     padding-bottom: 400px;
