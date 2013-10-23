@@ -64,7 +64,7 @@ a:hover{
 }
 
 .section{
-    padding: 57px 0 100px 0;
+    padding: 60px 0 60px 0;
 }
 
 
@@ -109,10 +109,10 @@ a:hover{
         width: 100%;
         z-index: 1;
         background-color: rgba(0, 0, 0, .3)
-        transition:all .2s linear;
-        -o-transition:all .2s linear;
-        -moz-transition:all .2s linear;
-        -webkit-transition:all .2s linear;
+        transition:all .1s linear;
+        -o-transition:all .1s linear;
+        -moz-transition:all .1s linear;
+        -webkit-transition:all .1s linear;
     }
 
     .nav{
@@ -211,8 +211,12 @@ a:hover{
 }
 .body a:hover{
 
-    padding: 1.5px 1.5px;
     background-color: white;
+
+        transition:all .4s ease-out;
+        -o-transition:all .4s ease-out;
+        -moz-transition:all .4s ease-out;
+        -webkit-transition:all .4s ease-out;
 }
 
 .body {
@@ -242,10 +246,25 @@ a:hover{
 }
 
 
+.about, .contact{
+    background: yellow;
+}
+
+.about a,
+.contact a{
+    background: white;
+}
+
+.about a:hover,
+.contact a:hover{
+    background:yellow;
+}
 
 /*CONTACT*/
 
 .contact{
-    padding-bottom: 400px;
+    margin-bottom: 400px;
 }
+
+.header{ padding: 0 0 50px 0;}
 
