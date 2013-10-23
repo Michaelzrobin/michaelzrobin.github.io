@@ -1,8 +1,8 @@
 /*GLOBAL*/
 
 * {
-    vertical-align: top;
     box-sizing: border-box;
+    position:relative;
 }
 
 h1{
@@ -13,6 +13,27 @@ h1{
     text-transform: uppercase;
     margin: 0 0;
     padding: 0px 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: helvetica;
+    border-radius: 8px;
+    border: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+    font-family: helvetica;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.container {
+    margin: 0 auto;
+    overflow: auto;
 }
 
 
@@ -29,37 +50,115 @@ h1{
   left: 0;
   z-index: 1;
   }
+
+  .strong{
+    font-weight: bold;
+}
+
+.em{
+    font-style: italic;
+}
+
+
+  /*HEADER*/
+
+.top-nav{
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.nav{
+    float: right;
+    padding-top: 1px;
+}
+
+.nav > a{
+    display: inline-block;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*HEADER 240px*/
+
+@media only screen and (max-width: 320px) {
+
+.top-nav{
+    padding: 0 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.nav{
+    width: 100%;
+    text-align: right;
+}
+
+.nav > a{
+    display: block;
+    padding: 1px 1.5px 1px 1px ;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+}
+
+}
+
+
 /*ABOUT*/
 
 .about{
     width: 100%;
 }
 
-   .circle {
-border-radius: 50%;
-width: 30%;
+   .selfie {
+width: 100%;
 height: auto;
-padding-top: 30%;
+padding-top: 48%;
 margin: 0 auto 3%;
 background: no-repeat;
 background-image: url(self.jpg);
+background-position: 60% 0;
 background-size: cover;
 position: relative;
 }
 
-/*max-width 240px*/
+.name{
+    visibility: hidden;
+    position: absolute;
+}
+
+/*SELFIE 240px*/
 @media only screen and (max-width: 320px) {
 
-   .circle {
+   .selfie {
 border-radius: 50%;
-width: 50%;
+width: 48%;
 height: auto;
-padding-top: 50%;
+padding-top: 48%;
 margin: 0 auto 4%;
 background: no-repeat;
 background-image: url(self.jpg);
+background-position: 52% 20%;
 background-size: cover;
 position: relative;
+z-index: 1;
+}}
+
+.name {
+    visibility: visible;
+    position: relative;
 }
 
 }
