@@ -22,14 +22,16 @@ h1{
 }
 /*ABOUT*/
 
-
+.about{
+    width: 100%;
+}
 
    .circle {
 border-radius: 50%;
 width: 30%;
 height: auto;
 padding-top: 30%;
-margin: 0 auto 4%;
+margin: 0 auto 3%;
 background: no-repeat;
 background-image: url(self.jpg);
 background-size: cover;
