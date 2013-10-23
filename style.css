@@ -112,6 +112,11 @@ a:hover{
 }
 
 
+.item-iphone{
+        visibility: hidden;
+        position: absolute;
+    }
+
 /*321px AND UNDER NAV BAR */
 
 @media only screen and (max-width: 321px) {
@@ -143,6 +148,17 @@ a:hover{
         font-weight: bold;
         font-size:16.5px;
         color: white;]
+    }
+
+    .item-bigger{
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+    .item-iphone{
+        visibility: visible;
+        position: relative;
     }
 
 }
