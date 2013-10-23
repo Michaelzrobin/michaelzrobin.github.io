@@ -36,6 +36,9 @@ a:hover{
     overflow: auto;
 }
 
+.static{
+    position:static;
+}
 
 .invisible{
     visibility: hidden;
@@ -43,13 +46,14 @@ a:hover{
 }
 
 .link-spanner{
-  position:absolute;
-  width:100%;
-  height:100%;
+  position: absolute;
   top:0;
   left: 0;
-  z-index: 1;
+  width:100%;
+  height:100%;
+  z-index: 4;
   }
+
 
   .strong{
     font-weight: bold;
@@ -62,18 +66,21 @@ a:hover{
 
   /*NAV BAR*/
 
+
+
 .top-nav{
     padding: 9px 0;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 5;
     background-color: rgba(0, 0, 0, 0.3)
 }
 
 .nav{
     float: right;
     padding-top: 1px;
+    margin-right: 5px;
 }
 
 .nav > a{
@@ -83,6 +90,7 @@ a:hover{
     border-radius: 3px;
     font-weight: bold;
     color: white;
+    z-index: 5;
 }
 
 
@@ -117,9 +125,9 @@ a:hover{
 }
 
 
-/*ABOUT*/
+/*HERO*/
 
-.about{
+.hero{
     width: 100%;
 }
 
@@ -142,13 +150,13 @@ position: relative;
 }
 
 
-/*471px ABOUT */
+/*471px AND UNDER HERO */
 @media only screen and (max-width: 471px) {
     .name{
         font-size: 70px;}
 }
 
-/*320px ABOUT */
+/*320px  AND UNDER HERO */
 @media only screen and (max-width: 320px) {
 
        .selfie {
@@ -174,9 +182,9 @@ position: relative;
 
 
 
-/*CONTACT*/
+/*ABOUT*/
 
-.contact a{
+.about a{
     color: black;
     padding: 2px 2px;
 }
@@ -194,7 +202,7 @@ position: relative;
 
 
 
-/*471px CONTACT*/
+/*471px AND UNDER ABOUT*/
 @media only screen and (max-width: 471px) {
     .body{
         font-size: 30px;
@@ -203,4 +211,12 @@ position: relative;
     }
 }
 
+
+.section{
+    padding: 57px 0 100px 0;
+}
+
+.contact{
+    padding-bottom: 400px;
+}
 
