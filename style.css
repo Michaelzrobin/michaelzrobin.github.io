@@ -65,7 +65,21 @@ a:hover{
 
 .section{
     padding: 60px 0 60px 0;
+    /*IF YOU WANT SECTIONS TO TAKE UP SPACE VERTICALLY
+    padding: 20% 0 20% 0;*/
 }
+
+/*IF YOU WANT SECTIONS TO TAKE UP SPACE VERTICALLY
+@media only screen and (max-width: 471px) {
+.section{
+    padding: 15% 0 15% 0;
+}}
+
+@media only screen and (max-width: 321px) {
+.section{
+    padding: 23% 0 10% 0;
+}}*/
+
 
 
   /*NAV BAR*/
@@ -139,6 +153,7 @@ a:hover{
 .hero{
     width: 100%;
     text-align: center;
+    margin-bottom: -3%;
 }
 
 .selfie {
@@ -155,23 +170,8 @@ a:hover{
     border-radius: 0px;
 }
 
-.name{
-    font-size: 100px;
-    /*visibility: invisible;*/
-    /*position: absolute;*/
-}
 
 
-/*471px AND UNDER HERO */
-@media only screen and (max-width: 471px) {
-    .name{
-        font-size: 70px;
-        transition:all .3s linear;
-        -o-transition:all .3s linear;
-        -moz-transition:all .3s linear;
-        -webkit-transition:all .3s linear;
-    }
-}
 
 /*321px  AND UNDER HERO */
 @media only screen and (max-width: 321px) {
@@ -190,15 +190,40 @@ a:hover{
         position: relative;
         z-index: 2;
     }
+}
 
+/*HEADER*/
+
+/*.header{ padding: 0 0 50px 0;}*/
+
+
+.name{
+    font-size: 100px;
+    /*visibility: invisible;*/
+    /*position: absolute;*/
+}
+
+
+/*471px AND UNDER HEADER */
+@media only screen and (max-width: 471px) {
+    .name{
+        font-size: 70px;
+        transition:all .3s linear;
+        -o-transition:all .3s linear;
+        -moz-transition:all .3s linear;
+        -webkit-transition:all .3s linear;
+    }
+}
+
+/*321px AND UNDER HEADER*/
+
+   @media only screen and (max-width: 321px) {
     .name {
         visibility: visible;
         position: relative;
         font-size: 60px;
     }
 }
-
-
 
 /*ABOUT*/
 
@@ -266,5 +291,4 @@ a:hover{
     margin-bottom: 400px;
 }
 
-.header{ padding: 0 0 50px 0;}
 

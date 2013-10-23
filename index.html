@@ -7,6 +7,23 @@
 </head>
 <body>
 
+<!-- JQUERY FOR NAVBAR CLICK POSITIONING
+  <script src="jquery.js"></script>
+    <script>
+    jQuery(document).ready(function () {
+    $('a[href^="#"]').click(function()
+    {
+        var sHref = this.href.split("#");
+        var topDistance = $("#"+sHref[1]).position().top;
+        var tds = topDistance +100;
+        $("html, body").animate({
+            scrollTop: tds
+        }, 'slow');
+    });
+});
+   </script>
+ -->
+
         <header class="top-nav">
 
             <a class="static" href="#hero">
@@ -29,7 +46,7 @@
 
         <img class="invisible" src="self.jpg">
     </section>
-    <section class=" header">
+    <section class=" header" id="header">
             <h1 class="name"> Michael </h1>
             <h1 class="name">Z. Robin </h1>
 
