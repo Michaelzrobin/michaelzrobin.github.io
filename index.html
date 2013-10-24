@@ -7,8 +7,11 @@
 </head>
 <body>
 
+<!-- JQUERY -->
   <script src="jquery.js"></script>
     <script>
+    if($(this).width() > 320)
+{
     jQuery(document).ready(function () {
     $('a[href^="#"]').click(function()
     {
@@ -20,7 +23,9 @@
         }, 'fast');
     });
 });
+}
    </script>
+   <!-- END JQUERY -->
 
 
         <header class="top-nav">

@@ -353,7 +353,7 @@ a:hover{
 }
 
 
-dia only screen and (max-width: 321px) {
+@media only screen and (max-width: 321px) {
 .about {
     padding-top: 10px;
 }}
