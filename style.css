@@ -69,6 +69,16 @@ a:hover{
     padding: 20% 0 20% 0;*/
 }
 
+@media only screen and (max-width: 321px) {
+.contact{
+    margin: 12px 0 0 0;
+}
+.about{
+    margin: 0 0 -12px 0;
+}}
+
+
+
 /*IF YOU WANT SECTIONS TO TAKE UP SPACE VERTICALLY
 @media only screen and (max-width: 471px) {
 .section{
@@ -319,4 +329,9 @@ a:hover{
     margin-bottom: 400px;
 }
 
+/*WORK*/
+
+.work{
+    padding-top: 72px;
+}
 
