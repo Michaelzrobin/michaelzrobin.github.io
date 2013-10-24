@@ -4,28 +4,10 @@
     <title>Michael Z. Robin</title>
         <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="landscape.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
 </head>
 <body>
-
-<!-- JQUERY -->
-  <script src="jquery.js"></script>
-    <script>
-    if($(this).width() > 320)
-{
-    jQuery(document).ready(function () {
-    $('a[href^="#"]').click(function()
-    {
-        var sHref = this.href.split("#");
-        var topDistance = $("#"+sHref[1]).position().top;
-        var tds = topDistance -45;
-        $("html, body").animate({
-            scrollTop: tds
-        }, 'fast');
-    });
-});
-}
-   </script>
-   <!-- END JQUERY -->
 
 
         <header class="top-nav">
@@ -65,16 +47,16 @@
     </section>
         <section class="work section" id="work">
        <p class="body">
-       He doesn't have much to show for his web dev skills yet, but feel free to check out his <a href="github.com/michaelzrobin">github</a> and his poorly updated <a href="http://michaelzrobin.tumblr.com">photo/art portfolio</a></p>
+       He doesn't have much to show for his web dev skills yet, but feel free to check out his <a href="http://github.com/michaelzrobin">github</a> and his poorly updated <a href="http://michaelzrobin.tumblr.com">photo/art portfolio</a></p>
    </p>
     </section>
          <section class="contact section" id="contact">
       <p class="body">
-Drop him a line at <a mailto="michaelzrobin@gmail.com">michaelzrobin@gmail.com</a> or check him out at <a href="http://www.linkedin.com/in/michaelzrobin">LinkedIn</a>, <a href="http://twitter.com/mackerelrobin">Twitter</a>, or <a href="http://instagram.com/michaelzrobin">Instagram</a> if you're really that interested in pictures of ramen and stuff
+Drop him a line via <a mailto="michaelzrobin@gmail.com">email</a> or check him out at <a href="http://www.linkedin.com/in/michaelzrobin">LinkedIn</a>, <a href="http://twitter.com/mackerelrobin">Twitter</a>, or <a href="http://instagram.com/michaelzrobin">Instagram</a> if you're really that interested in pictures of ramen and stuff
        </p>
     </section>
 
-    <section class="footer">
+    <section class="footer section">
 
 <p class="body">
     thanks.
@@ -82,5 +64,25 @@ Drop him a line at <a mailto="michaelzrobin@gmail.com">michaelzrobin@gmail.com</
 
     </section>
 
+<!-- JQUERY -->
+
+  <script src="jquery.js"></script>
+    <script>
+    if($(this).width() > 320)
+{
+    jQuery(document).ready(function () {
+    $('a[href^="#"]').click(function()
+    {
+        var sHref = this.href.split("#");
+        var topDistance = $("#"+sHref[1]).position().top;
+        var tds = topDistance -45;
+        $("html, body").animate({
+            scrollTop: tds
+        }, 'fast');
+    });
+});
+}
+   </script>
+   <!-- END JQUERY -->
 </body>
 </html>

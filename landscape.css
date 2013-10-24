@@ -1,0 +1,47 @@
+/*GLOBAL */
+
+@media only screen and (max-width: 480px) {
+
+    .section{
+    padding: 1% 0 12% 0;
+    }
+
+    .body{
+        font-size: 26px;
+        text-align: center;
+        display: block;
+        transition:all .3s linear;
+        -o-transition:all .3s linear;
+        -moz-transition:all .3s linear;
+        -webkit-transition:all .3s linear;
+    }
+
+    .item-iphone{
+        visibility: hidden;
+        position: absolute;
+    }
+
+        .item-bigger{
+        visibility: hidden;
+        position: absolute;
+    }
+
+      .item-landscape{
+        visibility: visible;
+        position: relative;
+    }
+
+
+/*HEADER */
+
+    .header{
+        margin-bottom:  8%;
+    }
+    .name{
+        font-size: 70px;
+        transition:all .3s linear;
+        -o-transition:all .3s linear;
+        -moz-transition:all .3s linear;
+        -webkit-transition:all .3s linear;
+    }
+}
