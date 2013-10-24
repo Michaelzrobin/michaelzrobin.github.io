@@ -14,6 +14,30 @@ h1{
     margin: 0 0;
     padding: 0px 0px;
 }
+.body a{
+    color: black;
+    padding: 1.2px 1.2px;
+    font-weight: bold;
+    background-color: yellow;
+}
+.body a:hover{
+    background-color: white;
+    transition:all .6s ease-out;
+    -o-transition:all .6s ease-out;
+    -moz-transition:all .6s ease-out;
+    -webkit-transition:all .6s ease-out;
+}
+
+.body {
+
+    text-align: justify;
+    font-size: 50px;
+    display: inline;
+    font-family: helvetica;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 a{
     text-decoration: none;
@@ -67,15 +91,72 @@ a:hover{
  padding: 24% 0 24% 0;
 }
 
+.item-iphone{
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+ .item-landscape{
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+/*480px AND UNDER GLOBAL */
+
 @media only screen and (max-width: 480px) {
-.section{
-    padding: 15% 0 15% 0;
-}}
+
+    .section{
+    padding: 1% 0 12% 0;
+    }
+
+    .body{
+        font-size: 26px;
+        text-align: center;
+        display: block;
+        transition:all .3s linear;
+        -o-transition:all .3s linear;
+        -moz-transition:all .3s linear;
+        -webkit-transition:all .3s linear;
+    }
+
+    .item-iphone{
+        visibility: hidden;
+        position: absolute;
+    }
+
+        .item-bigger{
+        visibility: hidden;
+        position: absolute;
+    }
+
+      .item-landscape{
+        visibility: visible;
+        position: relative;
+    }
+}
+
+
+/*321px AND UNDER GLOBAL */
 
 @media only screen and (max-width: 321px) {
 .section{
     padding: 18% 0 18% 0;
-}}
+    }
+    .item-bigger{
+        visibility: hidden;
+        position: absolute;
+    }
+ .item-landscape{
+        visibility: hidden;
+        position: absolute;
+    }
+    .item-iphone{
+        visibility: visible;
+        position: relative;
+    }
+}
 
 
 
@@ -109,10 +190,9 @@ a:hover{
 }
 
 
-.item-iphone{
-        visibility: hidden;
-        position: absolute;
-    }
+
+
+
 
 /*321px AND UNDER NAV BAR */
 
@@ -134,7 +214,6 @@ a:hover{
     .nav{
         width: 100%;
         text-align: right;
-
     }
 
     .nav > a{
@@ -144,21 +223,11 @@ a:hover{
         border-radius: 3px;
         font-weight: bold;
         font-size:16.5px;
-        color: white;]
+        color: white;
+
     }
-
-    .item-bigger{
-        visibility: hidden;
-        position: absolute;
-    }
-
-
-    .item-iphone{
-        visibility: visible;
-        position: relative;
-    }
-
 }
+
 
 
 /*HERO*/
@@ -251,30 +320,6 @@ a:hover{
 
 /*ABOUT*/
 
-.body a{
-    color: black;
-    padding: 1.2px 1.2px;
-    font-weight: bold;
-    background-color: yellow;
-}
-.body a:hover{
-    background-color: white;
-    transition:all .6s ease-out;
-    -o-transition:all .6s ease-out;
-    -moz-transition:all .6s ease-out;
-    -webkit-transition:all .6s ease-out;
-}
-
-.body {
-
-    text-align: justify;
-    font-size: 50px;
-    display: inline;
-    font-family: helvetica;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
 
 .about, .contact{
     background: yellow;
@@ -291,31 +336,15 @@ a:hover{
 }
 
 
-/*480px AND UNDER ABOUT*/
-@media only screen and (max-width: 480px) {
-    .body{
-        font-size: 30px;
-        text-align: center;
-        display: block;
-        transition:all .3s linear;
-        -o-transition:all .3s linear;
-        -moz-transition:all .3s linear;
-        -webkit-transition:all .3s linear;
-    }
-}
 
 
 
+
+@media only screen and (min-width: 480px) {
 .about{
-    padding: 10% 0 20% 0;
-}
-/*
-@media only screen and (max-width: 321px) {
-
-.about{
-    padding: 20% 0 10% 0;
+    padding: 10% 0 10% 0;
 }}
-*/
+
 
 /*CONTACT*/
 

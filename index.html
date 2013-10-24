@@ -7,7 +7,6 @@
 </head>
 <body>
 
-<!-- JQUERY FOR NAVBAR CLICK POSITIONING
   <script src="jquery.js"></script>
     <script>
     jQuery(document).ready(function () {
@@ -15,14 +14,14 @@
     {
         var sHref = this.href.split("#");
         var topDistance = $("#"+sHref[1]).position().top;
-        var tds = topDistance +100;
+        var tds = topDistance -45;
         $("html, body").animate({
             scrollTop: tds
-        }, 'slow');
+        }, 'fast');
     });
 });
    </script>
- -->
+
 
         <header class="top-nav">
 
@@ -34,6 +33,7 @@
                 <nav class="nav" role="navigation">
                      <a class="item-iphone" href="#hero"> ABOUT </a>
                       <a class="item-bigger" href="#header"> ABOUT </a>
+                      <a class="item-landscape" href="#about"> ABOUT </a>
                      <a href="#work"> WORK </a>
                     <a href="#contact">CONTACT </a>
                 </nav>
@@ -55,7 +55,7 @@
 
     <section class="about section" id="about">
        <p class="body">
-      Lives in Chicago,  Illinois, where he spends his time learning to code the web, eating hot dogs, and reading about the bolshevik revolution</p>
+      <span class="item-landscape"> Michael Z. Robin<br> </span> Lives in Chicago,  Illinois, where he spends his time learning to code the web, eating hot dogs, and reading about the bolshevik revolution</p>
    </p>
     </section>
         <section class="work section" id="work">
