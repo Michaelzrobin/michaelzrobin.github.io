@@ -64,21 +64,18 @@ a:hover{
 }
 
 .section{
-    padding: 60px 0 60px 0;
-    /*IF YOU WANT SECTIONS TO TAKE UP SPACE VERTICALLY
-    padding: 20% 0 20% 0;*/
+ padding: 24% 0 24% 0;
 }
 
-/*IF YOU WANT SECTIONS TO TAKE UP SPACE VERTICALLY
-@media only screen and (max-width: 471px) {
+@media only screen and (max-width: 480px) {
 .section{
     padding: 15% 0 15% 0;
 }}
 
 @media only screen and (max-width: 321px) {
 .section{
-    padding: 23% 0 10% 0;
-}}*/
+    padding: 18% 0 18% 0;
+}}
 
 
 
@@ -169,7 +166,7 @@ a:hover{
 .hero{
     width: 100%;
     text-align: center;
-    margin-bottom: -3%;
+
 }
 
 .selfie {
@@ -177,7 +174,7 @@ a:hover{
     width: 100%;
     height: auto;
     padding-top: 48%;
-    margin: 0 auto 3%;
+    margin: 0 auto;
     background: no-repeat;
     background-image: url(self.jpg);
     background-position: 60% 0;
@@ -218,8 +215,8 @@ a:hover{
 }
 
 
-/*471px AND UNDER HEADER */
-@media only screen and (max-width: 471px) {
+/*480px AND UNDER HEADER */
+@media only screen and (max-width: 480px) {
     .name{
         font-size: 70px;
         transition:all .3s linear;
@@ -242,7 +239,9 @@ a:hover{
 /*321px AND OVER HEADER PADDING*/
 
   @media only screen and (min-width: 321px) {
-    .header{ padding: 0px 0 35px 0;
+    .header{
+
+        /*padding: 0px 0 35px 0;*/
 
         transition:all .2s linear;
         -o-transition:all .2s linear;
@@ -260,10 +259,10 @@ a:hover{
 }
 .body a:hover{
     background-color: white;
-    transition:all .4s ease-out;
-    -o-transition:all .4s ease-out;
-    -moz-transition:all .4s ease-out;
-    -webkit-transition:all .4s ease-out;
+    transition:all .6s ease-out;
+    -o-transition:all .6s ease-out;
+    -moz-transition:all .6s ease-out;
+    -webkit-transition:all .6s ease-out;
 }
 
 .body {
@@ -306,8 +305,26 @@ a:hover{
 }
 
 
-/*321px AND UNDER ABOUT*/
+
+.about{
+    padding: 10% 0 20% 0;
+}
+/*
 @media only screen and (max-width: 321px) {
+
+.about{
+    padding: 20% 0 10% 0;
+}}
+*/
+
+/*CONTACT*/
+
+.contact{
+    /*margin-bottom: 800px;*/
+}
+
+
+dia only screen and (max-width: 321px) {
 .about {
     padding-top: 10px;
 }}
