@@ -67,8 +67,7 @@ a:hover{
 }
 
 .invisible{
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }
 
 .link-spanner{
