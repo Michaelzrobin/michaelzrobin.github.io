@@ -15,6 +15,7 @@ h1{
     text-transform: uppercase;
     margin: 0 0;
     padding: 0px 0px;
+    background-color: none;
 }
 .body a{
     color: black;
@@ -90,6 +91,8 @@ a:hover{
 
 .section{
  padding: 24% 0 24% 0;
+ background-image: url("geometry.png");
+ background-attachment: fixed;
 }
 
 .item-iphone{
@@ -161,6 +164,11 @@ a:hover{
 
 
 /*HEADER*/
+
+.header{
+     background-image: url("geometry.png");
+     background-attachment: fixed;
+}
 .name{
     font-size: 100px;
     /*visibility: invisible;*/
@@ -173,7 +181,8 @@ a:hover{
 }
 
 .about, .contact{
-    background: yellow;
+     background-image: url("geometry-yellow.png");
+     background-attachment: fixed;
 }
 
 .about a,
@@ -188,8 +197,9 @@ a:hover{
 
 
 /*CONTACT*/
-.contact{
-    margin-bottom: 400px;
-}
 
+/*FOOTER*/
+    .footer{
+        padding-top: 400px;
+    }
 
