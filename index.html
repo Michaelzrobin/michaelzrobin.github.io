@@ -67,22 +67,9 @@ Drop him a line via <a mailto="michaelzrobin@gmail.com">email</a> or check him o
 <!-- JQUERY -->
 
   <script src="jquery.js"></script>
-    <script>
-    if($(this).width() > 320)
-{
-    jQuery(document).ready(function () {
-    $('a[href^="#"]').click(function()
-    {
-        var sHref = this.href.split("#");
-        var topDistance = $("#"+sHref[1]).position().top;
-        var tds = topDistance -45;
-        $("html, body").animate({
-            scrollTop: tds
-        }, 'fast');
-    });
-});
-}
-   </script>
+<script src="enquire.min.js"></script>
+<script src="navbarabove.js"></script>
+
    <!-- END JQUERY -->
 </body>
 </html>
