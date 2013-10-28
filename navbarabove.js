@@ -1,4 +1,4 @@
-    enquire.register("screen and (min-width: 320px)", {
+    enquire.register("screen and (min-width: 321px)", {
         match: function() {
         jQuery(document).ready(function () {
     $('a[href^="#"]').click(function()

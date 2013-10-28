@@ -4,7 +4,7 @@
 /*GLOBAL */
 
 .section{
-    padding: 28% 0 28% 0;
+    padding: 30% 0 30% 0;
     }
     .item-bigger{
         visibility: hidden;
@@ -90,3 +90,7 @@
     padding-top: 10px;
 }}
 
+/*FOOTER*/
+    .footer{
+        padding-top: 400px;
+    }
