@@ -17,21 +17,8 @@ h1{
     padding: 0px 0px;
     background-color: none;
 }
-.body a{
-    color: black;
-    padding: 1.2px 1.2px;
-    font-weight: bold;
-    background-color: yellow;
-}
-.body a:hover{
-    background-color: white;
-    transition:all .6s ease-out;
-    -o-transition:all .6s ease-out;
-    -moz-transition:all .6s ease-out;
-    -webkit-transition:all .6s ease-out;
-}
 
-.body {
+.body-text {
 
     text-align: justify;
     font-size: 50px;
@@ -42,9 +29,10 @@ h1{
     text-align: center;
 }
 
+
+
 a{
     text-decoration: none;
-    color: white;
     font-family: helvetica;
     border-radius: 8px;
     border: none;
@@ -52,11 +40,28 @@ a{
 
 a:hover{
     text-decoration: none;
-    color: white;
     font-family: helvetica;
     background-color: rgba(0, 0, 0, 0.3);
+    transition:all .3s ease-in;
+    -o-transition:all .3s ease-in;
+    -moz-transition:all .3s ease-in;
+    -webkit-transition:all .3s ease-in;
 }
 
+
+.body-text a{
+    color: black;
+    padding: 1.2px 1.2px;
+    font-weight: bold;
+     background-image: url("geometry-yellow.png");
+}
+.body-text a:hover{
+     background-image: url("geometry.png");
+    transition:all .6s ease-out;
+    -o-transition:all .6s ease-out;
+    -moz-transition:all .6s ease-out;
+    -webkit-transition:all .6s ease-out;
+}
 
 .container {
     margin: 0 auto;
@@ -185,14 +190,14 @@ a:hover{
      background-attachment: fixed;
 }
 
-.about a,
-.contact a{
-    background: white;
+.about .body-text a,
+.contact .body-text a{
+     background-image: url("geometry.png");
 }
 
-.about a:hover,
-.contact a:hover{
-    background:yellow;
+.about .body-text a:hover,
+.contact .body-text a:hover{
+     background-image: url("geometry-yellow.png");
 }
 
 
