@@ -5,10 +5,6 @@
     position:relative;
 }
 
-body{
-    height: 100%;
-}
-
 
 
 h1{
@@ -154,7 +150,6 @@ a:hover{
 
 /*HERO*/
 .hero{
-    height: 100%;
     width: 100%;
     text-align: center;
 
