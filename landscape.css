@@ -37,7 +37,7 @@
     .header{
         padding-bottom:  8%;
     }
-    .name{
+    .header .name{
         font-size: 70px;
         transition:all .3s linear;
         -o-transition:all .3s linear;
