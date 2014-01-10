@@ -55,6 +55,17 @@ a{
     }
 }
 
+.contact{
+    .body-text{
+        a{
+            background-color: white;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
 
 .container {
     margin: 0 auto;

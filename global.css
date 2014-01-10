@@ -52,6 +52,13 @@ a:hover {
   background-image: none;
 }
 
+.contact .body-text a {
+  background-color: white;
+}
+.contact .body-text a:hover {
+  background-color: transparent;
+}
+
 .container {
   margin: 0 auto;
   overflow: auto;
